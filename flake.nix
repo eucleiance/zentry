@@ -52,16 +52,22 @@
             pkgs.git-filter-repo
 
             pkgs.heroku
+
+            pkgs.ngrok
           ];
 
           shellHook = ''
-            echo "Welcome Back Sir,"
-            echo "Here are the installed packages:"
-            echo "- nodejs_23"
-            echo "- pnpm_10"
-            echo "- eslint"
-            echo "- vercel@latest"
-            echo "- Python 3.11 with seaborn, pandas, numpy, matplotlib, jupyterlab"
+            echo ""
+            echo "Welcome Back Sir."
+            echo ""
+            echo "Flake Activated"
+            echo "You're currently in a devShell"
+            echo ""
+            echo "Python Packages:"
+            echo "seaborn numpy matplotlib scipy scikitlearn notebook uvicorn fastapi"
+            echo "" 
+            echo "Extra Packages:"
+            echo "nodejs_23 pnpm_10 vercel git-lfs ngrok heroku"
           '';
         };
       }
